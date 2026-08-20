@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us | Delicious Bites Restaurant</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F2F1EF;
+            color: #723E31;
+            line-height: 1.7;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #723E31;
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+        }
+
+        nav h1 {
+            color: #F2F1EF;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav div {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            color: #F2F1EF;
+            text-decoration: none;
+            margin-left: 28px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #D9B18E;
+        }
+
+        /* Hero */
+        .hero {
+            background-color: #D9D2CC;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 48px;
+            color: #723E31;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            color: #A67564;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 0 25px;
+        }
+
+        .section {
+            background-color: white;
+            padding: 40px;
+            margin-bottom: 35px;
+            border-left: 6px solid #D9B18E;
+            box-shadow: 0 4px 12px rgba(114, 62, 49, 0.08);
+        }
+
+        .section h2 {
+            color: #723E31;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            color: #5f504a;
+            font-size: 17px;
+        }
+
+        /* Mission and Vision */
+        .two-columns {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 35px;
+        }
+
+        .two-columns .section {
+            flex: 1;
+            margin-bottom: 0;
+        }
+
+        /* Opening Hours */
+        .hours {
+            background-color: #D9D2CC;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .hours h2 {
+            color: #723E31;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        .hours-table {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .hours-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 13px 20px;
+            border-bottom: 1px solid #A67564;
+            color: #723E31;
+            font-size: 17px;
+        }
+
+        .hours-row:last-child {
+            border-bottom: none;
+        }
+
+        .day {
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #723E31;
+            color: #F2F1EF;
+            text-align: center;
+            padding: 30px;
+        }
+
+        footer h3 {
+            margin-bottom: 8px;
+            color: #D9B18E;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+            }
+
+            nav div {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h2 {
+                font-size: 36px;
+            }
+
+            .two-columns {
+                flex-direction: column;
+            }
+
+            .section {
+                padding: 30px 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+
+        <h1>|| Delicious Bites Restaurant</h1>
+
+        <div>
+            <a href="Home1.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="order.html">Order</a>
+            <a href="Contact1.html">Contact</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <h2>About Us</h2>
+
+        <p>
+            Discover our story, purpose, and passion behind our Delicious Bites Restaurant.
+        </p>
+
+    </section>
+
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- History -->
+        <section class="section">
+
+            <h2>Our History</h2>
+
+            <p>
+                Our Restaurant started with a simple dream;
+                to create a place where people could enjoy delicious and delectable food
+                while making wonderful memories with family and friends.
+                What started as a small idea grew into an expanding restaurant
+                built around good food, wonderful service, and a love for
+                bringing people together.
+            </p>
+
+            <br>
+
+            <p>
+                Throughout the years, Delicious Bites has continued to grow while
+                staying grounded and knowing where it came from. We carefully prepare every dish
+                with quality ingredients and a commitment to great taste.
+                Our restaurant is proud to serve our community and looks
+                forward to creating many more memorable dining experiences.
+            </p>
+
+        </section>
+
+
+        <!-- Mission and Vision -->
+        <div class="two-columns">
+
+            <section class="section">
+
+                <h2>Our Mission</h2>
+
+                <p>
+                    Our mission is to provide delicious, delectable, high-quality food
+                    and friendly service in a comfortable environment.
+                    We aim to make every guest feel welcome and satisfied
+                    while giving them a dining experience they will never forget.
+                </p>
+
+            </section>
+
+
+            <section class="section">
+
+                <h2>Our Vision</h2>
+
+                <p>
+                    Our vision is to become a trusted and loved restaurant throughout the world,
+                    known for its delicious food, wonderful service, and meaningful
+                    connections with our customers and community.
+                </p>
+
+            </section>
+
+        </div>
+
+
+        <!-- Opening Hours -->
+        <section class="hours">
+
+            <h2>Opening Hours</h2>
+
+            <div class="hours-table">
+
+                <div class="hours-row">
+                    <span class="day">Monday</span>
+                    <span>10:00 AM – 9:00 PM</span>
+                </div>
+
+                <div class="hours-row">
+                    <span class="day">Tuesday</span>
+                    <span>10:00 AM – 9:00 PM</span>
+                </div>
+
+                <div class="hours-row">
+                    <span class="day">Wednesday</span>
+                    <span>10:00 AM – 9:00 PM</span>
+                </div>
+
+                <div class="hours-row">
+                    <span class="day">Thursday</span>
+                    <span>10:00 AM – 9:00 PM</span>
+                </div>
+
+                <div class="hours-row">
+                    <span class="day">Friday</span>
+                    <span>10:00 AM – 10:00 PM</span>
+                </div>
+
+                <div class="hours-row">
+                    <span class="day">Saturday</span>
+                    <span>10:00 AM – 10:00 PM</span>
+                </div>
+
+                <div class="hours-row">
+                    <span class="day">Sunday</span>
+                    <span>10:00 AM – 8:00 PM</span>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>Delicious Bites Restaurant</h3>
+
+        <p>Good food. Great moments. Delicious memories.</p>
+
+        <p>&copy; 2026 Delicious Bites Restaurant. All Rights Reserved.</p>
+
+    </footer>
+
+</body>
+</html>

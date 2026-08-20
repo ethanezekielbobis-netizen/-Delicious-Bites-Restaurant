@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Delicious Bites Restaurant</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F2F1EF;
+            color: #723E31;
+            line-height: 1.7;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #723E31;
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            color: #F2F1EF;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 25px;
+        }
+
+        nav a {
+            color: #F2F1EF;
+            text-decoration: none;
+            margin-left: 28px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #D9B18E;
+        }
+
+        /* Contact Header */
+        .contact-header {
+            background-color: #723E31;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .contact-header h2 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 45px;
+        }
+
+        .contact-header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        /* Contact Section */
+        #contact {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 0 25px;
+        }
+
+        .contact-box {
+            background-color: white;
+            padding: 40px;
+            border-left: 6px solid #D9B18E;
+            box-shadow: 0 4px 12px rgba(114, 62, 49, 0.08);
+            margin-bottom: 40px;
+        }
+
+        .contact-box h2 {
+            font-family: Georgia, "Times New Roman", serif;
+            color: #723E31;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .contact-box p {
+            color: #5f504a;
+            margin: 12px 0;
+            font-size: 17px;
+        }
+
+        .contact-box strong {
+            color: #723E31;
+        }
+
+        /* Business Hours */
+        .schedule-container {
+            width: 100%;
+        }
+
+        .schedule-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+            border-bottom: 1px solid #D9D2CC;
+        }
+
+        .day {
+            color: #723E31;
+            font-weight: bold;
+        }
+
+        .time {
+            color: #5f504a;
+        }
+
+        /* Rating */
+        .star-rating {
+            direction: rtl;
+            display: inline-flex;
+        }
+
+        .star-rating input {
+            display: none;
+        }
+
+        .star-rating label {
+            font-size: 40px;
+            color: #A67564;
+            cursor: pointer;
+        }
+
+        .star-rating input:checked ~ label,
+        .star-rating label:hover,
+        .star-rating label:hover ~ label {
+            color: #D9B18E;
+        }
+
+        /* Form */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            color: #723E31;
+            font-weight: bold;
+            margin-bottom: 7px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            max-width: 600px;
+            padding: 12px;
+            border: 1px solid #D9D2CC;
+            border-radius: 4px;
+            background-color: #F2F1EF;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        button {
+            background-color: #723E31;
+            color: #F2F1EF;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        button:hover {
+            background-color: #A67564;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #723E31;
+            color: #F2F1EF;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+        }
+
+        footer h3 {
+            color: #D9B18E;
+            margin-bottom: 8px;
+        }
+
+        /* Responsive */
+        @media (max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .contact-header h2 {
+                font-size: 35px;
+            }
+
+            .contact-box {
+                padding: 25px;
+            }
+
+            .schedule-row {
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+
+        <h1>|| Delicious Bites Restaurant</h1>
+
+        <div>
+            <a href="Home1.html">Home</a>
+            <a href="Aboutus.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="order.html">Order</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Contact Header -->
+    <section class="contact-header">
+
+        <h2>Contact Us</h2>
+
+        <p>
+            We'd love to hear from you!
+        </p>
+
+    </section>
+
+
+    <!-- Contact Information -->
+    <section id="contact">
+
+        <div class="contact-box">
+
+            <h2>Contact Information</h2>
+
+            <p>
+                <strong>Contact Number:</strong>
+                0912-345-6789
+            </p>
+
+            <p>
+                <strong>Email:</strong>
+                example@gmail.com
+            </p>
+
+            <p>
+                <strong>Address:</strong>
+                Manila, Philippines
+            </p>
+
+        </div>
+
+
+        <!-- Business Hours -->
+        <div class="contact-box">
+
+            <h2>Business Hours</h2>
+
+            <div class="schedule-container">
+
+                <div class="schedule-row">
+                    <span class="day">Monday</span>
+                    <span class="time">10:00 AM – 9:00 PM</span>
+                </div>
+
+                <div class="schedule-row">
+                    <span class="day">Tuesday</span>
+                    <span class="time">10:00 AM – 9:00 PM</span>
+                </div>
+
+                <div class="schedule-row">
+                    <span class="day">Wednesday</span>
+                    <span class="time">10:00 AM – 9:00 PM</span>
+                </div>
+
+                <div class="schedule-row">
+                    <span class="day">Thursday</span>
+                    <span class="time">10:00 AM – 9:00 PM</span>
+                </div>
+
+                <div class="schedule-row">
+                    <span class="day">Friday</span>
+                    <span class="time">10:00 AM – 10:00 PM</span>
+                </div>
+
+                <div class="schedule-row">
+                    <span class="day">Saturday</span>
+                    <span class="time">10:00 AM – 10:00 PM</span>
+                </div>
+
+                <div class="schedule-row">
+                    <span class="day">Sunday</span>
+                    <span class="time">10:00 AM – 8:00 PM</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Rating -->
+        <div class="contact-box">
+
+            <h2>Rate Us</h2>
+
+            <div class="star-rating">
+
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5">★</label>
+
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">★</label>
+
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">★</label>
+
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">★</label>
+
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1">★</label>
+
+            </div>
+
+        </div>
+
+
+        <!-- Message Form -->
+        <div class="contact-box">
+
+            <h2>Send Us a Message</h2>
+
+            <form>
+
+                <div class="form-group">
+                    <label for="name">Name:</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Enter your message"
+                    ></textarea>
+                </div>
+
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>Delicious Bites Restaurant</h3>
+
+        <p>Good food. Great moments. Delicious memories.</p>
+
+        <p>
+            &copy; 2026 Delicious Bites Restaurant. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>

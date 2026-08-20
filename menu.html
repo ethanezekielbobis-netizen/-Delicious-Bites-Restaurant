@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Menu | Delicious Bites Restaurant</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #fffaf5;
+            font-family: Arial, sans-serif;
+            color: #555555;
+        }
+
+        /* =========================
+           NAVIGATION BAR
+        ========================= */
+
+        nav {
+            background-color: #723E31;
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+        }
+
+        nav h1 {
+            color: #F2F1EF;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav div {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            color: #F2F1EF;
+            text-decoration: none;
+            margin-left: 28px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #D9B18E;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            text-align: center;
+            padding: 50px 20px 20px;
+        }
+
+        header h2 {
+            color: #723E31;
+            font-size: 45px;
+            margin-bottom: 8px;
+            font-family: 'Great Vibes', cursive;
+        }
+
+        header p {
+            font-size: 17px;
+            color: #666666;
+        }
+
+        /* =========================
+           MAIN TITLE
+        ========================= */
+
+        .menu-title {
+            text-align: center;
+            font-family: 'Great Vibes', cursive;
+            color: #723E31;
+            font-size: 42px;
+            margin: 30px 0 45px;
+        }
+
+        /* =========================
+           SECTIONS
+        ========================= */
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h3 {
+            color: #723E31;
+            font-family: 'Great Vibes', cursive;
+            font-size: 32px;
+            border-bottom: 2px solid #D9B18E;
+            padding: 0 20px 10px;
+            margin-bottom: 20px;
+        }
+
+        /* =========================
+           MENU CARDS
+        ========================= */
+
+        .menu-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 0 20px;
+        }
+
+        .menu-card {
+            width: 31%;
+            background-color: #ffffff;
+            text-align: center;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            padding-bottom: 20px;
+        }
+
+        .menu-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .menu-card h4 {
+            color: #723E31;
+            font-size: 21px;
+            margin: 15px 10px 10px;
+            font-family: 'Great Vibes', cursive;
+        }
+
+        .menu-card p {
+            font-size: 15px;
+            color: #777777;
+            line-height: 1.5;
+            padding: 0 15px;
+            min-height: 45px;
+        }
+
+        .menu-card strong {
+            display: block;
+            color: #A67564;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background-color: #723E31;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+
+        footer h3 {
+            margin-bottom: 8px;
+            color: #D9B18E;
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+            }
+
+            nav div {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .menu-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .menu-card {
+                width: 90%;
+            }
+
+            header h2 {
+                font-size: 36px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+    ========================= -->
+
+    <nav>
+
+        <h1>|| Delicious Bites Restaurant</h1>
+
+        <div>
+            <a href="Home1.html">Home</a>
+            <a href="Aboutus.html">About</a>
+            <a href="order.html">Order</a>
+            <a href="Contact1.html">Contact</a>
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         HEADER
+    ========================= -->
+
+    <header>
+
+        <h2>Welcome to Delicious Bites</h2>
+
+        <p>
+            Fresh ingredients, delicious meals, and unforgettable flavors!
+        </p>
+
+    </header>
+
+
+    <h2 class="menu-title">Our Menu</h2>
+
+
+    <!-- =========================
+         APPETIZERS
+    ========================= -->
+
+    <section>
+
+        <h3>🍴 Appetizers</h3>
+
+        <div class="menu-container">
+
+            <div class="menu-card">
+
+                <img src="bbce7f6b-2f9b-49b9-a24f-90454aa4fcdc.jpe"
+                     alt="Caesar Salad">
+
+                <h4>Caesar Salad</h4>
+
+                <p>
+                    Fresh lettuce, crispy croutons, Parmesan cheese,
+                    and Caesar dressing.
+                </p>
+
+                <strong>₱150</strong>
+
+            </div>
+
+
+            <div class="menu-card">
+
+                <img src="59ff1c8f-9b86-4177-8013-19d996e852f0.jpe"
+                     alt="Garlic Bread">
+
+                <h4>Garlic Bread</h4>
+
+                <p>
+                    Warm and crispy bread topped with delicious
+                    garlic butter.
+                </p>
+
+                <strong>₱100</strong>
+
+            </div>
+
+
+            <div class="menu-card">
+
+                <img src="d5d672ed-8fec-471d-9fca-b241baa53b38.jpe"
+                     alt="Mozzarella Sticks">
+
+                <h4>Mozzarella Sticks</h4>
+
+                <p>
+                    Crispy golden sticks filled with warm,
+                    melted mozzarella.
+                </p>
+
+                <strong>₱180</strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         DRINKS
+    ========================= -->
+
+    <section>
+
+        <h3>🥤 Drinks</h3>
+
+        <div class="menu-container">
+
+            <div class="menu-card">
+
+                <img src="0e10d5e4-6bfd-4f5b-accd-6d9dd6a5fb0c.jpe"
+                     alt="Iced Tea">
+
+                <h4>Iced Tea</h4>
+
+                <p>
+                    Refreshing and chilled iced tea perfect
+                    for any meal.
+                </p>
+
+                <strong>₱80</strong>
+
+            </div>
+
+
+            <div class="menu-card">
+
+                <img src="495bed63-2bc6-4e59-91f1-4fe56657f865.jpe"
+                     alt="Lemonade">
+
+                <h4>Lemonade</h4>
+
+                <p>
+                    Fresh and refreshing lemonade made
+                    with real lemons.
+                </p>
+
+                <strong>₱90</strong>
+
+            </div>
+
+
+            <div class="menu-card">
+
+                <img src="2e250d5c-2d39-4a0e-990a-3bede1569169.jpe"
+                     alt="Mango Shake">
+
+                <h4>Mango Shake</h4>
+
+                <p>
+                    Creamy and refreshing shake made with
+                    sweet ripe mangoes.
+                </p>
+
+                <strong>₱130</strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         MAIN COURSE
+    ========================= -->
+
+    <section>
+
+        <h3>🍽️ Main Course</h3>
+
+        <div class="menu-container">
+
+            <div class="menu-card">
+
+                <img src="53076b77-906a-4eb6-baa2-95222e6c6c71.jpe"
+                     alt="Grilled Cheese">
+
+                <h4>Grilled Cheese</h4>
+
+                <p>
+                    Golden toasted bread with delicious
+                    melted cheese inside.
+                </p>
+
+                <strong>₱180</strong>
+
+            </div>
+
+
+            <div class="menu-card">
+
+                <img src="8cbf9b73-2974-48c9-9284-38304c9e8c76.jpe"
+                     alt="Beef Lasagna">
+
+                <h4>Beef Lasagna</h4>
+
+                <p>
+                    Layers of pasta, seasoned beef, tomato
+                    sauce, and melted cheese.
+                </p>
+
+                <strong>₱280</strong>
+
+            </div>
+
+
+            <div class="menu-card">
+
+                <img src="575c2338-6784-4785-93b7-acd5bf13c368.jpe"
+                     alt="Steak & Vegetables">
+
+                <h4>Steak & Vegetables</h4>
+
+                <p>
+                    Tender grilled steak served with fresh
+                    and healthy vegetables.
+                </p>
+
+                <strong>₱450</strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         DESSERT
+    ========================= -->
+
+    <section>
+
+        <h3>🍰 Dessert</h3>
+
+        <div class="menu-container">
+
+            <div class="menu-card">
+
+                <img src="4da7e167-3085-4955-8a62-17ba76bec606.jpe"
+                     alt="Cheesecake">
+
+                <h4>Cheesecake</h4>
+
+                <p>
+                    Creamy cheesecake with a delicious
+                    buttery crust.
+                </p>
+
+                <strong>₱160</strong>
+
+            </div>
+
+
+            <div class="menu-card">
+
+                <img src="c542747d-d13e-42e4-8f9f-a893b2f21b67.jpe"
+                     alt="Vanilla Ice Cream">
+
+                <h4>Vanilla Ice Cream</h4>
+
+                <p>
+                    Smooth and creamy vanilla ice cream
+                    served cold and delicious.
+                </p>
+
+                <strong>₱120</strong>
+
+            </div>
+
+
+            <div class="menu-card">
+
+                <img src="6d229f37-e2ac-480d-a462-cae087fd2540.jpe"
+                     alt="Strawberry Tart">
+
+                <h4>Strawberry Tart</h4>
+
+                <p>
+                    Sweet strawberries on a crispy and
+                    delicious pastry crust.
+                </p>
+
+                <strong>₱170</strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <h3>Delicious Bites Restaurant</h3>
+
+        <p>Good food. Great moments. Delicious memories.</p>
+
+        <p>
+            &copy; 2026 Delicious Bites Restaurant.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>

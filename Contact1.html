@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Contact | Delicious Bites Restaurant</title>
-
     <style>
         * {
             margin: 0;
@@ -96,6 +94,18 @@
             color: #723E31;
         }
 
+        /* Email Link Specific Style */
+        .contact-box a {
+            color: #723E31;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-box a:hover {
+            color: #D9B18E;
+            text-decoration: underline;
+        }
+
         /* Business Hours */
         .schedule-container {
             width: 100%;
@@ -118,9 +128,14 @@
         }
 
         /* Rating */
+        .rating-form-group {
+            margin-bottom: 25px;
+        }
+
         .star-rating {
             direction: rtl;
             display: inline-flex;
+            margin-bottom: 15px;
         }
 
         .star-rating input {
@@ -131,6 +146,7 @@
             font-size: 40px;
             color: #A67564;
             cursor: pointer;
+            transition: color 0.2s ease;
         }
 
         .star-rating input:checked ~ label,
@@ -139,7 +155,7 @@
             color: #D9B18E;
         }
 
-        /* Form */
+        /* Form Controls */
         .form-group {
             margin-bottom: 20px;
         }
@@ -161,6 +177,13 @@
             background-color: #F2F1EF;
             font-family: Arial, sans-serif;
             font-size: 15px;
+            color: #723E31;
+        }
+
+        input[type="text"]:focus,
+        textarea:focus {
+            outline: 2px solid #723E31;
+            background-color: white;
         }
 
         textarea {
@@ -177,6 +200,7 @@
             cursor: pointer;
             font-weight: bold;
             font-size: 15px;
+            transition: background-color 0.2s ease;
         }
 
         button:hover {
@@ -199,7 +223,6 @@
 
         /* Responsive */
         @media (max-width: 700px) {
-
             nav {
                 flex-direction: column;
                 gap: 15px;
@@ -225,186 +248,123 @@
         }
     </style>
 </head>
-
 <body>
 
     <!-- Navigation -->
     <nav>
-
         <h1>|| Delicious Bites Restaurant</h1>
-
         <div>
             <a href="index.html">Home</a>
             <a href="Aboutus.html">About</a>
             <a href="menu.html">Menu</a>
             <a href="order.html">Order</a>
         </div>
-
     </nav>
 
-
     <!-- Contact Header -->
-    <section class="contact-header">
-
+    <header class="contact-header">
         <h2>Contact Us</h2>
+        <p>We'd love to hear from you!</p>
+    </header>
 
-        <p>
-            We'd love to hear from you!
-        </p>
+    <!-- Contact Content -->
+    <main id="contact">
 
-    </section>
-
-
-    <!-- Contact Information -->
-    <section id="contact">
-
-        <div class="contact-box">
-
+        <!-- Contact Information -->
+        <section class="contact-box">
             <h2>Contact Information</h2>
-
             <p>
                 <strong>Contact Number:</strong>
                 0912-345-6789
             </p>
-<p>
-    <strong>Email:</strong> 
-    <a href="mailto:DeliciousBitesRestaurant@gmail.com">DeliciousBitesRestaurant@gmail.com</a>
-</p>
-
+            <p>
+                <strong>Email:</strong> 
+                <a href="mailto:DeliciousBitesRestaurant@gmail.com">DeliciousBitesRestaurant@gmail.com</a>
+            </p>
             <p>
                 <strong>Address:</strong>
                 Manila, Philippines
             </p>
-
-        </div>
-
+        </section>
 
         <!-- Business Hours -->
-        <div class="contact-box">
-
+        <section class="contact-box">
             <h2>Business Hours</h2>
-
             <div class="schedule-container">
-
                 <div class="schedule-row">
                     <span class="day">Monday</span>
                     <span class="time">10:00 AM – 9:00 PM</span>
                 </div>
-
                 <div class="schedule-row">
                     <span class="day">Tuesday</span>
                     <span class="time">10:00 AM – 9:00 PM</span>
                 </div>
-
                 <div class="schedule-row">
                     <span class="day">Wednesday</span>
                     <span class="time">10:00 AM – 9:00 PM</span>
                 </div>
-
                 <div class="schedule-row">
                     <span class="day">Thursday</span>
                     <span class="time">10:00 AM – 9:00 PM</span>
                 </div>
-
                 <div class="schedule-row">
                     <span class="day">Friday</span>
                     <span class="time">10:00 AM – 10:00 PM</span>
                 </div>
-
                 <div class="schedule-row">
                     <span class="day">Saturday</span>
                     <span class="time">10:00 AM – 10:00 PM</span>
                 </div>
-
                 <div class="schedule-row">
                     <span class="day">Sunday</span>
                     <span class="time">10:00 AM – 8:00 PM</span>
                 </div>
-
             </div>
+        </section>
 
-        </div>
+        <!-- Rating & Feedback Form -->
+        <section class="contact-box">
+            <h2>Rate & Review Us</h2>
+            <form action="#" method="POST">
+                <div class="rating-form-group">
+                    <div class="star-rating">
+                        <input type="radio" id="star5" name="rating" value="5">
+                        <label for="star5">★</label>
 
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4">★</label>
 
-        <!-- Rating -->
-        <div class="contact-box">
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3">★</label>
 
-            <h2>Rate Us</h2>
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2">★</label>
 
-            <div class="star-rating">
-
-                <input type="radio" id="star5" name="rating" value="5">
-                <label for="star5">★</label>
-
-                <input type="radio" id="star4" name="rating" value="4">
-                <label for="star4">★</label>
-
-                <input type="radio" id="star3" name="rating" value="3">
-                <label for="star3">★</label>
-
-                <input type="radio" id="star2" name="rating" value="2">
-                <label for="star2">★</label>
-
-                <input type="radio" id="star1" name="rating" value="1">
-                <label for="star1">★</label>
-
-            </div>
-
-        </div>
-
-
-        <!-- Message Form -->
-        <div class="contact-box">
-
-            <h2>Send Us a Message</h2>
-
-            <form>
-
-                <div class="form-group">
-                    <label for="name">Name:</label>
-
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        placeholder="Enter your name"
-                    >
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1">★</label>
+                    </div>
                 </div>
 
-
                 <div class="form-group">
-                    <label for="message">Message:</label>
-
-                    <textarea
-                        id="message"
-                        name="message"
-                        placeholder="Enter your message"
-                    ></textarea>
+                    <label for="client-name">Your Name</label>
+                    <input type="text" id="client-name" name="name" placeholder="John Doe" required>
                 </div>
 
+                <div class="form-group">
+                    <label for="client-message">Your Message / Review</label>
+                    <textarea id="client-message" name="message" placeholder="Tell us about your experience..." required></textarea>
+                </div>
 
-                <button type="submit">
-                    Send Message
-                </button>
-
+                <button type="submit">Submit Feedback</button>
             </form>
+        </section>
 
-        </div>
-
-    </section>
-
+    </main>
 
     <!-- Footer -->
     <footer>
-
         <h3>Delicious Bites Restaurant</h3>
-
-        <p>Good food. Great moments. Delicious memories.</p>
-
-        <p>
-            &copy; 2026 Delicious Bites Restaurant. All Rights Reserved.
-        </p>
-
+        <p>&copy; 2026 Delicious Bites Restaurant. All Rights Reserved.</p>
     </footer>
 
 </body>
